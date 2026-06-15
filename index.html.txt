@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Racun Marketplace Viral</title>
+    <!-- Menggunakan Tailwind CSS CDN untuk desain instan dan modern -->
+    <script src="https://tailwindcss.com"></script>
+    <style>
+        /* Animasi halus saat berganti tab */
+        .product-card { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- 1. HERO SECTION -->
+    <header class="bg-white border-b border-gray-100 py-12 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <span class="bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">🔥 Rekomendasi Netizen</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-3 leading-tight">
+                Pusat Racun Produk Viral & Camilan Enak!
+            </h1>
+            <p class="text-gray-500 mt-2 text-sm md:text-base">
+                Semua produk di bawah ini adalah rekomendasi terbaik dengan rating 4.8+ di Shopee & TikTok Shop.
+            </p>
+            <a href="#katalog" class="inline-block mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-orange-500/20 transition-all text-sm">
+                Mulai Berburu Racun 👇
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. NAVIGATION TABS -->
+    <nav id="katalog" class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 py-4 px-4 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto flex gap-2 overflow-x-auto no-scrollbar whitespace-nowrap pb-1 md:justify-center">
+            <button onclick="filterCategory('semua')" class="tab-btn bg-orange-500 text-white text-xs md:text-sm font-semibold px-4 py-2 rounded-full transition-all">Semua</button>
+            <button onclick="filterCategory('fashion')" class="tab-btn bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs md:text-sm font-semibold px-4 py-2 rounded-full transition-all">Fashion OOTD</button>
+            <button onclick="filterCategory('skincare')" class="tab-btn bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs md:text-sm font-semibold px-4 py-2 rounded-full transition-all">Skincare Glowing</button>
+            <button onclick="filterCategory('elektronik')" class="tab-btn bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs md:text-sm font-semibold px-4 py-2 rounded-full transition-all">Elektronik & Gadget</button>
+            <button onclick="filterCategory('makanan')" class="tab-btn bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs md:text-sm font-semibold px-4 py-2 rounded-full transition-all">Camilan Viral</button>
+        </div>
+    </nav>
+
+    <!-- 3. KATALOG PRODUK GRID -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+            <!-- KARTU PRODUK 1: FASHION -->
+            <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between" data-category="fashion">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Diskon 50%</span>
+                    <!-- GANTI src DENGAN URL FOTO PRODUK ANDA -->
+                    <img src="https://unsplash.com" alt="Cardigan Oversize" class="w-full aspect-square object-cover">
+                </div>
+                <div class="p-3 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm line-clamp-2">Kardigan Rajut Oversize Ala Korea Viral</h3>
+                        <p class="text-xs text-yellow-500 mt-1">⭐ 4.9 <span class="text-gray-400">(2k+ Terjual)</span></p>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-[10px] text-gray-400 line-through">Rp 150.000</p>
+                        <p class="text-sm font-extrabold text-orange-600">Rp 75.000</p>
+                        <!-- GANTI href DENGAN LINK AFFILIATE ANDA -->
+                        <a href="https://shopee.co.id" target="_blank" class="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 rounded-xl mt-2 transition-all">
+                            Cek Promo di Shopee
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU PRODUK 2: SKINCARE -->
+            <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between" data-category="skincare">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-purple-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Viral TikTok</span>
+                    <img src="https://unsplash.com" alt="Serum Glowing" class="w-full aspect-square object-cover">
+                </div>
+                <div class="p-3 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm line-clamp-2">Serum Glowing Brightening 20ml Original</h3>
+                        <p class="text-xs text-yellow-500 mt-1">⭐ 4.8 <span class="text-gray-400">(5k+ Terjual)</span></p>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-[10px] text-gray-400 line-through">Rp 120.000</p>
+                        <p class="text-sm font-extrabold text-orange-600">Rp 89.000</p>
+                        <a href="https://shopee.co.id" target="_blank" class="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 rounded-xl mt-2 transition-all">
+                            Cek Promo di Shopee
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU PRODUK 3: ELEKTRONIK -->
+            <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between" data-category="elektronik">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Paling Laris</span>
+                    <img src="https://unsplash.com" alt="TWS Earphone" class="w-full aspect-square object-cover">
+                </div>
+                <div class="p-3 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm line-clamp-2">TWS Bluetooth Earphone Bass Mantaap Bass</h3>
+                        <p class="text-xs text-yellow-500 mt-1">⭐ 4.8 <span class="text-gray-400">(10k+ Terjual)</span></p>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-[10px] text-gray-400 line-through">Rp 299.000</p>
+                        <p class="text-sm font-extrabold text-black">Rp 145.000</p>
+                        <!-- Menggunakan warna hitam jika Anda ingin mengarahkan ke TikTok Shop -->
+                        <a href="https://tiktok.com" target="_blank" class="block w-full text-center bg-black hover:bg-gray-900 text-white text-xs font-bold py-2 rounded-xl mt-2 transition-all">
+                            Beli di TikTok Shop
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KARTU PRODUK 4: MAKANAN -->
+            <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between" data-category="makanan">
+                <div class="relative">
+                    <span class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Bikin Nagih</span>
+                    <img src="https://unsplash.com" alt="Baso Aci" class="w-full aspect-square object-cover">
+                </div>
+                <div class="p-3 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-sm line-clamp-2">Baso Aci Instan Kuah Pedas Nampol Isi Banyak</h3>
+                        <p class="text-xs text-yellow-500 mt-1">⭐ 4.9 <span class="text-gray-400">(50k+ Terjual)</span></p>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-[10px] text-gray-400 line-through">Rp 25.000</p>
+                        <p class="text-sm font-extrabold text-orange-600">Rp 12.500</p>
+                        <a href="https://shopee.co.id" target="_blank" class="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 rounded-xl mt-2 transition-all">
+                            Cek Promo di Shopee
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 4. FOOTER & SOCIAL PROOF -->
+    <footer class="bg-gray-900 text-white mt-12 py-8 px-4 text-center text-sm">
+        <p class="text-gray-400">Punya pertanyaan atau mau request produk untuk di-spill?</p>
+        <a href="https://wa.me" target="_blank" class="inline-block mt-3 bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-2 rounded-full transition-all text-xs">
+            💬 Hubungi Saya via WhatsApp
+        </a>
+        <p class="text-gray-600 text-xs mt-8">© 2026 Katalog Racun Belanja. Semua tautan toko 100% aman dan terpercaya.</p>
